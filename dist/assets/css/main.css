@@ -1,0 +1,16 @@
+.noticia {
+  background-color: red;
+  display: grid;
+  grid-template-areas: "imagen" "titulo" "contenido" "enlace"; }
+  .noticia--vertical {
+    grid-template-areas: "imagen" "imagen " "titulo" "contenido" "enlace"; }
+  .noticia--horizontal {
+    grid-template-areas: "imagen titulo" "imagen contenido" "imagen enlace"; }
+  .noticia__imagen {
+    grid-area: imagen; }
+  .noticia__titulo {
+    grid-area: titulo; }
+  .noticia__contenido {
+    grid-area: contenido; }
+  .noticia__enlace {
+    grid-area: enlace; }
