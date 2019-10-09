@@ -1,60 +1,40 @@
-$debug:false;
-$tamanyos:(xs,10),(S,13),(M,15),(L,20),(XL,30);
-// .menu{
-//     @if $debug {
-//         border:1px solid red;
-//     }
-//     @each $nombre,$fuente in $tamanyos {
-//         &__tamanyo--#{$nombre}{
-//             font-size:$fuente#{px};
-//         }
-        
-//     }
-//     width: 100px;
-//     @for $i from 1 through 5 {
-//         &__tamaño-#{$i}{
-//         font-size:$i*2+8px;
-//     }
-// }
-//     &__imagen{
-//         color:red;
-//         &--derecha{
-//             background-color: aquamarine;
-//         }
-//     }
-// }
-// $rojo:red;
-// div{
-//     width:100px;
-//     background-color:$rojo
-// }
 .noticia {
     background-color: red;
     display: grid;
     grid-template-areas: "imagen""titulo""contenido""enlace";
-    &--vertical{
+    &--vertical {
         grid-template-areas: "imagen" "imagen ""titulo""contenido""enlace";
     }
-    &--horizontal{
-        grid-template-areas: "imagen titulo"
-                              "imagen contenido"
-                              "imagen enlace";
-   
-   
+    &--horizontal {
+        grid-template-areas: "imagen titulo" "imagen contenido" "imagen enlace";
     }
-    &__imagen{
+    &__imagen {
         grid-area: imagen;
     }
-    &__titulo{
+    &__titulo {
         grid-area: titulo;
     }
-    &__contenido{
+    &__contenido {
         grid-area: contenido;
     }
-    &__enlace{
+    &__enlace {
         grid-area: enlace;
     }
-
 }
 
+.l__Noticias {
+    display: grid;
+    grid-template-areas: "vertical horizontal horizontal" "vertical normal normal";
+}
 
+.posicion__Noticia--vertical {
+    grid-area: vertical;
+}
+
+.posicion__Noticia--hotizontal {
+    grid-area: horizontal;
+}
+
+.posicion__Noticia {
+    grid-area: normal;
+}
