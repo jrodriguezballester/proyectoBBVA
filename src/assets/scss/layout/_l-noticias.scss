@@ -1,0 +1,19 @@
+.l-noticias {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-areas: "izquierda arriba-derecha arriba-derecha" 
+                          "izquierda abajo-centro abajo-derecha";
+}
+.l-noticias__abajo-centro {
+    grid-area: abajo-centro;
+  }
+  .l-noticias__abajo-derecha {
+    grid-area: abajo-derecha;
+  }
+  .l-noticias__arriba-derecha {
+    grid-area: arriba-derecha;
+  }
+  .l-noticias__izquierda {
+    grid-area: izquierda;
+  }

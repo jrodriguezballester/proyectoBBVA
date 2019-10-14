@@ -1,0 +1,19 @@
+.ventaja {
+    background-color: red;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 150px 300px;
+    grid-template-rows: 1fr 1fr;
+    &__imagen {
+        grid-column: 1;
+        grid-row:span 1/2;
+      }
+      &__titulo {
+        grid-column: 2;
+        text-align: center;
+        font-size: 30px;
+      }
+      &__contenido {
+        grid-column: 2;
+      }
+}

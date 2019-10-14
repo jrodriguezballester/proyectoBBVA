@@ -1,40 +1,8 @@
-.noticia {
-    background-color: red;
-    display: grid;
-    grid-template-areas: "imagen""titulo""contenido""enlace";
-    &--vertical {
-        grid-template-areas: "imagen" "imagen ""titulo""contenido""enlace";
-    }
-    &--horizontal {
-        grid-template-areas: "imagen titulo" "imagen contenido" "imagen enlace";
-    }
-    &__imagen {
-        grid-area: imagen;
-    }
-    &__titulo {
-        grid-area: titulo;
-    }
-    &__contenido {
-        grid-area: contenido;
-    }
-    &__enlace {
-        grid-area: enlace;
-    }
-}
+@import "base/reset.css",
+"componentes/_c-seccion__titulo",
+"componentes/_c-noticia.scss",
+"componentes/_c-ventaja.scss",
+"layout/l-ventajas",
+"layout/_l-noticias.scss";
 
-.l__Noticias {
-    display: grid;
-    grid-template-areas: "vertical horizontal horizontal" "vertical normal normal";
-}
 
-.posicion__Noticia--vertical {
-    grid-area: vertical;
-}
-
-.posicion__Noticia--hotizontal {
-    grid-area: horizontal;
-}
-
-.posicion__Noticia {
-    grid-area: normal;
-}

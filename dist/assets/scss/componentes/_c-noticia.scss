@@ -1,0 +1,28 @@
+.noticia {
+  background-color: red;
+  height: 100%;
+  display: grid;
+  grid-template-areas: "imagen" "titulo" "contenido" "enlace";
+  &--vertical {
+    grid-template-areas: "imagen" "imagen " "titulo" "contenido" "enlace";
+  }
+  &--horizontal {
+    grid-template-areas: "imagen titulo" "imagen contenido" "imagen enlace";
+  }
+  &__imagen {
+    grid-area: imagen;
+  }
+  &__titulo {
+    grid-area: titulo;
+    text-align: center;
+    font-size: 30px;
+  }
+  &__contenido {
+    grid-area: contenido;
+  }
+  &__enlace {
+    color: blue;
+    grid-area: enlace;
+    vertical-align:text-bottom ;
+  }
+}
