@@ -1,27 +1,29 @@
 {
-  "name": "proyectobbva",
-  "version": "1.0.0",
-  "description": "Hacer la pagina del BBVA",
-  "main": "index.js",
-  "directories": {
-    "doc": "docs"
-  },
-  "dependencies": {},
-  "devDependencies": {},
+    "name": "proyectobbva",
+    "version": "1.0.0",
+    "description": "Hacer la pagina del BBVA",
+    "main": "index.js",
+    "directories": {
+        "doc": "docs"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "onchange": "^6.1.0"
+    },
     "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": ".\\scripts\\build.sh echo 'build.sh ahora copiaremos los archivos de src/ hasta dist/'",
-    "deploy": "npm run build &&  .\\scripts\\deploy.sh",
-    "serve": "onchange .\\src\\**\\* -- .\\scripts\\deploy.sh"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jrodriguezballester/proyectoBBVA.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jrodriguezballester/proyectoBBVA/issues"
-  },
-  "homepage": "https://github.com/jrodriguezballester/proyectoBBVA#readme"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": ".\\scripts\\build.sh echo 'build.sh ahora copiaremos los archivos de src/ hasta dist/'",
+        "deploy": "npm run build &&  .\\scripts\\deploy.sh",
+        "serve": "onchange .\\src\\**\\* -- .\\scripts\\deploy.sh"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jrodriguezballester/proyectoBBVA.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/jrodriguezballester/proyectoBBVA/issues"
+    },
+    "homepage": "https://github.com/jrodriguezballester/proyectoBBVA#readme"
 }

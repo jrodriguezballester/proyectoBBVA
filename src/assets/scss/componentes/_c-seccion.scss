@@ -1,14 +1,21 @@
-.seccion__titulo{
+.seccion--oscura {
+    background-color: rgb(243, 240, 240);
+    height: 900px;
+}
+
+.seccion__titulo {
     text-align: center;
     font-size: 50px;
-   
     padding: 50px;
 }
+
 .seccion__pie {
     text-align: center;
-  
 }
-.seccion__contenido{
-    margin-left:93px;
-    margin-right: 93px;
+
+.seccion__contenido {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 906px;
 }

@@ -1,30 +1,35 @@
 .noticia {
-  @if ($debug==true){
-    border: 1px solid blue;
-}
-  height: 100%;
-  display: grid;
-  grid-template-areas: "imagen" "titulo" "contenido" "enlace";
-  &--vertical {
-    grid-template-areas: "imagen" "imagen " "titulo" "contenido" "enlace";
-  }
-  &--horizontal {
-    grid-template-areas: "imagen titulo" "imagen contenido" "imagen enlace";
-  }
-  &__imagen {
-    grid-area: imagen;
-  }
-  &__titulo {
-    grid-area: titulo;
-    text-align: center;
-    font-size: 30px;
-  }
-  &__contenido {
-    grid-area: contenido;
-  }
-  &__enlace {
-    color: blue;
-    grid-area: enlace;
-    vertical-align:text-bottom ;
-  }
+    @if ($debugNoticia==true) {
+        border: 1px solid blue;
+    }
+    box-shadow: 7px 7px 10px grey;
+    background-color: white;
+    height: 100%;
+    display: grid;
+    grid-template-areas: "imagen" "titulo" "contenido" "enlace";
+    &--vertical {
+        grid-template-areas: "imagen" "imagen " "titulo" "contenido" "enlace";
+    }
+    &--horizontal {
+        grid-template-areas: "imagen titulo" "imagen contenido" "imagen enlace";
+    }
+    &__imagen {
+        grid-area: imagen;
+    }
+    &__titulo {
+        margin-top: 15px;
+        grid-area: titulo;
+        text-align: center;
+        font-size: 30px;
+    }
+    &__contenido {
+        grid-area: contenido;
+        margin: 20px;
+    }
+    &__enlace {
+        margin: 20px;
+        color: blue;
+        grid-area: enlace;
+        vertical-align: text-bottom;
+    }
 }
