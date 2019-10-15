@@ -1,8 +1,10 @@
-@import "base/reset.css",
-"variables/variables.scss",
+@import "base/_reset.scss",
+"variables/_variables.scss",
 "componentes/_c-seccion__titulo",
 "componentes/_c-noticia.scss",
 "componentes/_c-ventaja.scss",
+"componentes/c-servicio",
+"componentes/c-boton.scss",
 "layout/l-columns.scss",
 "layout/_l-noticias.scss";
 
