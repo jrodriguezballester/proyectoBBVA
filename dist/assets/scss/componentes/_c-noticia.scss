@@ -1,5 +1,7 @@
 .noticia {
-  background-color: red;
+  @if ($debug==true){
+    border: 1px solid blue;
+}
   height: 100%;
   display: grid;
   grid-template-areas: "imagen" "titulo" "contenido" "enlace";

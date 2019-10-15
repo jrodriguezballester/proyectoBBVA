@@ -359,10 +359,17 @@ template {
 .seccion__titulo {
   text-align: center;
   font-size: 50px;
-  background-color: aqua; }
+  padding: 50px; }
+
+.seccion__pie {
+  text-align: center; }
+
+.seccion__contenido {
+  margin-left: 93px;
+  margin-right: 93px; }
 
 .noticia {
-  background-color: red;
+  border: 1px solid blue;
   height: 100%;
   display: grid;
   grid-template-areas: "imagen" "titulo" "contenido" "enlace"; }
@@ -382,6 +389,20 @@ template {
     color: blue;
     grid-area: enlace;
     vertical-align: text-bottom; }
+
+.ventaja {
+  background-color: blue;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 150px 300px; }
+  .ventaja__imagen {
+    grid-column: 1; }
+  .ventaja__titulo {
+    grid-column: 2;
+    text-align: center;
+    font-size: 30px; }
+  .ventaja__contenido {
+    grid-column: 2; }
 
 .ventaja {
   background-color: blue;
@@ -419,10 +440,11 @@ template {
   border: 1px solid green; }
 
 .l-noticias {
-  width: 80%;
-  margin: auto;
+  border: 1px solid green;
   display: grid;
-  grid-template-areas: "izquierda arriba-derecha arriba-derecha"  "izquierda abajo-centro abajo-derecha"; }
+  grid-template-areas: "izquierda arriba-derecha arriba-derecha"  "izquierda abajo-centro abajo-derecha";
+  grid-column-gap: 25px;
+  grid-row-gap: 25px; }
 
 .l-noticias__abajo-centro {
   grid-area: abajo-centro; }
