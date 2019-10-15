@@ -1,0 +1,12 @@
+
+.l-columns {
+  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  
+}
+.l-columns__area{
+    @if ($debug==true){
+        border: 1px solid green;
+    }
+}

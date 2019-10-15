@@ -27,7 +27,7 @@
     vertical-align: text-bottom; }
 
 .ventaja {
-  background-color: red;
+  background-color: blue;
   height: 100%;
   display: grid;
   grid-template-columns: 150px 300px;
@@ -42,9 +42,12 @@
   .ventaja__contenido {
     grid-column: 2; }
 
-.l-ventajas {
+.l-columns {
   display: grid;
   grid-template-columns: 1fr 1fr; }
+
+.l-columns__area {
+  border: 1px solid green; }
 
 .l-noticias {
   width: 80%;
