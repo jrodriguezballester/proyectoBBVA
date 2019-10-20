@@ -3,17 +3,15 @@
     height: 100%;
     display: grid;
     grid-template-columns: 150px 300px;
-  
     &__imagen {
         grid-column: 1;
-    
-      }
-      &__titulo {
+    }
+    &__titulo {
         grid-column: 2;
         text-align: center;
-        font-size: 30px;
-      }
-      &__contenido {
+        font-size: 20px;
+    }
+    &__contenido {
         grid-column: 2;
-      }
+    }
 }
