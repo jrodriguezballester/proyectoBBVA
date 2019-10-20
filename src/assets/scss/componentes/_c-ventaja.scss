@@ -1,19 +1,25 @@
 .ventaja {
-    background-color: blue;
+    background-color: white;
     height: 100%;
     display: grid;
-    grid-template-columns: 150px 300px;
-  
+    grid-template-columns: 130px 350px;
+    margin-left: 10px;
+    margin-bottom: 10px;
     &__imagen {
         grid-column: 1;
-    
-      }
-      &__titulo {
+        grid-row: span 2;
+    }
+    &__titulo {
         grid-column: 2;
-        text-align: center;
-        font-size: 30px;
-      }
-      &__contenido {
+        text-align: left;
+        font-weight: bold;
+        font-size: $tamanoFuenteTitulo;
+        margin-top: 10px;
+        // margin-left: 10px;
+    }
+    &__contenido {
         grid-column: 2;
-      }
+        text-align: left;
+        font-size: $tamanoFuenteNormal;
+    }
 }
