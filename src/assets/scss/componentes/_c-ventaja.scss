@@ -3,11 +3,16 @@
     height: 100%;
     display: grid;
     grid-template-columns: 130px 350px;
+    column-gap: 30px;
+    row-gap: 60px;
     &__imagen {
         grid-column: 1;
         grid-row: span 2;
         margin-top: 10px;
         margin-right: 10px;
+    }
+    &__informacion {
+        // width: 90%;
     }
     &__titulo {
         grid-column: 2;
@@ -21,5 +26,7 @@
         grid-column: 2;
         text-align: left;
         font-size: $tamanoFuenteNormal;
+        line-height: 25px;
+        margin-top: 10px;
     }
 }

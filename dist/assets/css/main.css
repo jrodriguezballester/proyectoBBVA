@@ -365,6 +365,9 @@ template {
 .seccion--clara {
   background-color: white; }
 
+.seccion--corporativa {
+  background-color: blue; }
+
 .seccion__titulo {
   text-align: center;
   font-size: 50px;
@@ -376,11 +379,12 @@ template {
   height: 100px; }
 
 .seccion__contenido {
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 20%;
+  margin-right: auto;
   margin-top: 40px;
   margin-bottom: 40px;
-  width: 80%; }
+  margin-left: 10%;
+  margin-right: 10%; }
 
 .noticia {
   box-shadow: 7px 7px 10px grey;
@@ -412,7 +416,9 @@ template {
   background-color: white;
   height: 100%;
   display: grid;
-  grid-template-columns: 130px 350px; }
+  grid-template-columns: 130px 350px;
+  column-gap: 30px;
+  row-gap: 60px; }
   .ventaja__imagen {
     grid-column: 1;
     grid-row: span 2;
@@ -427,20 +433,30 @@ template {
   .ventaja__contenido {
     grid-column: 2;
     text-align: left;
-    font-size: 18px; }
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 10px; }
 
 .servicio {
-  display: grid; }
+  display: grid;
+  /* width: 100%; */
+  height: 350px;
+  background-color: darkblue; }
   .servicio__imagen {
-    grid-column: 2; }
-  .servicio__informacion {
-    grid-column: 1; }
-  .servicio__titulo {
     grid-column: 2;
+    align-self: center; }
+  .servicio__informacion {
+    grid-column: 1;
+    align-self: center; }
+  .servicio__titulo {
     text-align: center;
     font-size: 30px; }
   .servicio__contenido {
-    grid-column: 2; }
+    font-size: 20px;
+    font-size: 20px;
+    margin-left: 20px;
+    line-height: 30px;
+    margin-top: 10px; }
 
 .boton {
   width: 165px;
@@ -455,9 +471,11 @@ template {
 
 .l-columns--2columns {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 30px;
-  row-gap: 60px; }
+  grid-template-columns: 1fr 1fr; }
+
+.l-columns__area {
+  border: 2px solid green;
+  border: 2px solid blue; }
 
 .l-puzzle {
   display: grid;

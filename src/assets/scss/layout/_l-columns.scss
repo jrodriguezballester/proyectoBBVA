@@ -6,12 +6,13 @@
 .l-columns--2columns {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 30px;
-    row-gap: 60px;
+    // column-gap: 30px;
+    // row-gap: 60px;
 }
 
 .l-columns__area {
-    @if ($debug==true) {
-        border: 1px solid green;
+    @if ($debug==false) {
+        border: 2px solid green;
+        border: 2px solid blue;
     }
 }
