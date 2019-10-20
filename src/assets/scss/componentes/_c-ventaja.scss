@@ -3,11 +3,11 @@
     height: 100%;
     display: grid;
     grid-template-columns: 130px 350px;
-    margin-left: 10px;
-    margin-bottom: 10px;
     &__imagen {
         grid-column: 1;
         grid-row: span 2;
+        margin-top: 10px;
+        margin-right: 10px;
     }
     &__titulo {
         grid-column: 2;

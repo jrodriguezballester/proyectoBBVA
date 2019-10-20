@@ -356,29 +356,31 @@ template {
 [hidden] {
   display: none; }
 
+.seccion {
+  border: 2px solid red; }
+
 .seccion--oscura {
   background-color: #f3f0f0; }
 
 .seccion--clara {
-  background-color: #c01515; }
+  background-color: white; }
 
 .seccion__titulo {
-  border: 1px solid green;
   text-align: center;
   font-size: 50px;
   padding: 50px; }
 
 .seccion__pie {
-  border: 1px solid green;
-  margin-top: 50px;
-  text-align: center; }
+  margin-top: 120px;
+  text-align: center;
+  height: 100px; }
 
 .seccion__contenido {
-  border: 1px solid green;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  width: 906px; }
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 80%; }
 
 .noticia {
   box-shadow: 7px 7px 10px grey;
@@ -410,12 +412,12 @@ template {
   background-color: white;
   height: 100%;
   display: grid;
-  grid-template-columns: 130px 350px;
-  margin-left: 10px;
-  margin-bottom: 10px; }
+  grid-template-columns: 130px 350px; }
   .ventaja__imagen {
     grid-column: 1;
-    grid-row: span 2; }
+    grid-row: span 2;
+    margin-top: 10px;
+    margin-right: 10px; }
   .ventaja__titulo {
     grid-column: 2;
     text-align: left;
@@ -427,15 +429,25 @@ template {
     text-align: left;
     font-size: 18px; }
 
+.servicio {
+  display: grid; }
+  .servicio__imagen {
+    grid-column: 2; }
+  .servicio__informacion {
+    grid-column: 1; }
+  .servicio__titulo {
+    grid-column: 2;
+    text-align: center;
+    font-size: 30px; }
+  .servicio__contenido {
+    grid-column: 2; }
+
 .boton {
   width: 165px;
-  border-radius: 20px;
+  border-radius: 5px;
   padding: 20px;
   background-color: green;
-  color: white;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto; }
+  color: white; }
 
 .l-columns {
   display: grid;
@@ -443,10 +455,9 @@ template {
 
 .l-columns--2columns {
   display: grid;
-  grid-template-columns: 1fr 1fr; }
-
-.l-columns__area {
-  border: 1px solid green; }
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
+  row-gap: 60px; }
 
 .l-puzzle {
   display: grid;
