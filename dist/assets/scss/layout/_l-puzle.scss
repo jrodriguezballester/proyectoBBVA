@@ -1,0 +1,28 @@
+.l-puzzle {
+    @if ($debugNoticia==true) {
+        border: 1px solid green;
+    }
+    display: grid;
+    grid-template-areas: "izquierda arriba-derecha arriba-derecha" "izquierda abajo-centro abajo-derecha";
+    grid-column-gap: 25px;
+    grid-row-gap: 25px;
+    grid-template-columns: 288px 288px 280px;
+    ;
+    // margin: 10px;
+}
+
+.l-puzzle__abajo-centro {
+    grid-area: abajo-centro;
+}
+
+.l-puzzle__abajo-derecha {
+    grid-area: abajo-derecha;
+}
+
+.l-puzzle__arriba-derecha {
+    grid-area: arriba-derecha;
+}
+
+.l-puzzle__izquierda {
+    grid-area: izquierda;
+}
