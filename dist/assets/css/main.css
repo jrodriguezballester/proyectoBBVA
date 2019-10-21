@@ -356,9 +356,6 @@ template {
 [hidden] {
   display: none; }
 
-.seccion {
-  border: 2px solid red; }
-
 .seccion--oscura {
   background-color: #f3f0f0; }
 
@@ -366,7 +363,8 @@ template {
   background-color: white; }
 
 .seccion--corporativa {
-  background-color: blue; }
+  background-color: #004481;
+  color: white; }
 
 .seccion__titulo {
   text-align: center;
@@ -379,12 +377,10 @@ template {
   height: 100px; }
 
 .seccion__contenido {
-  margin-left: 20%;
-  margin-right: auto;
   margin-top: 40px;
   margin-bottom: 40px;
-  margin-left: 10%;
-  margin-right: 10%; }
+  margin-left: 20%;
+  margin-right: 20%; }
 
 .noticia {
   box-shadow: 7px 7px 10px grey;
@@ -416,7 +412,7 @@ template {
   background-color: white;
   height: 100%;
   display: grid;
-  grid-template-columns: 130px 350px;
+  grid-template-columns: 100px 345px;
   column-gap: 30px;
   row-gap: 60px; }
   .ventaja__imagen {
@@ -439,9 +435,7 @@ template {
 
 .servicio {
   display: grid;
-  /* width: 100%; */
-  height: 350px;
-  background-color: darkblue; }
+  height: 350px; }
   .servicio__imagen {
     grid-column: 2;
     align-self: center; }
@@ -457,6 +451,14 @@ template {
     margin-left: 20px;
     line-height: 30px;
     margin-top: 10px; }
+  .servicio--oscuro {
+    background-color: #020241; }
+  .servicio--menososcuro {
+    background-color: #030373; }
+  .servicio--claro {
+    background-color: #0505be; }
+  .servicio--masclaro {
+    background-color: #0505d7; }
 
 .boton {
   width: 165px;
@@ -473,15 +475,11 @@ template {
   display: grid;
   grid-template-columns: 1fr 1fr; }
 
-.l-columns__area {
-  border: 2px solid green;
-  border: 2px solid blue; }
-
 .l-puzzle {
   display: grid;
   grid-template-areas: "izquierda arriba-derecha arriba-derecha" "izquierda abajo-centro abajo-derecha";
-  grid-column-gap: 25px;
-  grid-row-gap: 25px;
+  grid-column-gap: 50px;
+  grid-row-gap: 35px;
   grid-template-columns: 288px 288px 280px; }
 
 .l-puzzle__abajo-centro {

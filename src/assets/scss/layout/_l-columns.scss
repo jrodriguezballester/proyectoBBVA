@@ -11,7 +11,7 @@
 }
 
 .l-columns__area {
-    @if ($debug==false) {
+    @if ($debug==true) {
         border: 2px solid green;
         border: 2px solid blue;
     }

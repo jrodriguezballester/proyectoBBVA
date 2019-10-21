@@ -1,25 +1,22 @@
 .servicio {
     display: grid;
-    /* width: 100%; */
     height: 350px;
-    background-color: darkblue;
-    //     background-color: blue;
-    //     height: 100%;
-    //     display: grid;
-    //     grid-template-columns: 150px 300px;
+ 
     &__imagen {
         grid-column: 2;
-        align-self: center;
-        // justify-self: center;
+        align-self: center;     
     }
+
     &__informacion {
         grid-column: 1;
         align-self: center;
     }
+
     &__titulo {
         text-align: center;
-        font-size: 30px;
+        font-size: 30px;      
     }
+
     &__contenido {
         font-size: 20px;
         font-size: 20px;
@@ -27,4 +24,20 @@
         line-height: 30px;
         margin-top: 10px;
     }
+
+    &--oscuro{
+        background-color:$color-masoscuro;
+    }
+    &--menososcuro{
+       
+        background-color: $color-oscuro;
+    }
+    &--claro{
+        background-color: $color-claro;
+    }
+    &--masclaro{
+        background-color: $color-masclaro;
+    }
+ 
+
 }

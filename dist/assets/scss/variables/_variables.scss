@@ -1,5 +1,10 @@
 $debug: false;
 $debugNoticia:false;
-$debugSeccion: true;
+$debugSeccion: false;
 $tamanoFuenteTitulo:20px;
 $tamanoFuenteNormal:18px;
+$primary-color: rgb(4, 4, 165);
+$color-masclaro:lighten($primary-color,10%);
+$color-claro:lighten($primary-color,5%);
+$color-oscuro:darken($primary-color,10%) ;
+$color-masoscuro:darken($primary-color,20%);
