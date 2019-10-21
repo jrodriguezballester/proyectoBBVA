@@ -1,7 +1,6 @@
 .servicio {
     display: grid;
     height: 350px;
-  //  background-color: darkblue;
  
     &__imagen {
         grid-column: 2;
@@ -25,7 +24,7 @@
         line-height: 30px;
         margin-top: 10px;
     }
-    
+
     &--oscuro{
         background-color:$color-masoscuro;
     }
@@ -39,9 +38,6 @@
     &--masclaro{
         background-color: $color-masclaro;
     }
-    // $color-masclaro:lighten($primary-color,60%);
-    // $color-claro:lighten($primary-color,30%);
-    // $color-oscuro:darken($primary-color,10%) ;
-    // $color-masoscuro:darken($primary-color,30%);
+ 
 
 }

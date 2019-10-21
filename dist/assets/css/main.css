@@ -356,11 +356,15 @@ template {
 [hidden] {
   display: none; }
 
+.seccion {
+  height: 950px; }
+
 .seccion--oscura {
-  background-color: #f3f0f0; }
+  background-color: #e9e9e9; }
 
 .seccion--clara {
-  background-color: white; }
+  background-color: white;
+  height: 750px; }
 
 .seccion--corporativa {
   background-color: #004481;
@@ -467,6 +471,29 @@ template {
   background-color: green;
   color: white; }
 
+.ayuda {
+  border: 1px solid red;
+  text-align: center; }
+  .ayuda__circulo {
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    border: 1px solid blue;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .ayuda__titulo {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px; }
+  .ayuda__contenido {
+    text-align: center;
+    font-size: 18px;
+    line-height: 25px;
+    margin-top: 10px; }
+
 .l-columns {
   display: grid;
   grid-template-columns: 1fr 1fr; }
@@ -474,6 +501,10 @@ template {
 .l-columns--2columns {
   display: grid;
   grid-template-columns: 1fr 1fr; }
+
+.l-columns--3columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; }
 
 .l-puzzle {
   display: grid;

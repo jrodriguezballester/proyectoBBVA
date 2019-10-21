@@ -10,9 +10,13 @@
     // row-gap: 60px;
 }
 
+.l-columns--3columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
 .l-columns__area {
     @if ($debug==true) {
         border: 2px solid green;
-        border: 2px solid blue;
     }
 }
