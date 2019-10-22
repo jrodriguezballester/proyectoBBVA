@@ -2,11 +2,14 @@
     @if ($debugNoticia==true) {
         border: 1px solid blue;
     }
+  
+    display: grid;
+    grid-template-areas: "imagen" "titulo" "contenido" "enlace";
+
     box-shadow: 7px 7px 10px grey;
     background-color: white;
     height: 100%;
-    display: grid;
-    grid-template-areas: "imagen" "titulo" "contenido" "enlace";
+
     &--vertical {
         grid-template-areas: "imagen" "imagen " "titulo" "contenido" "enlace";
     }
@@ -17,19 +20,33 @@
         grid-area: imagen;
     }
     &__titulo {
+
         margin-top: 15px;
         grid-area: titulo;
-        text-align: center;
-        font-size: 30px;
+
+        text-align: left;
+        font-family:$fontFamily;
+        font-size: $tamanoFuenteTitulo;
+        font-weight: bold;
+
+        margin: 20px;
     }
     &__contenido {
+        font-family:$fontFamily;
+        font-size: $tamanoFuenteContenido;
+        line-height: 1.5em;
         grid-area: contenido;
-        margin: 20px;
+        margin: 0px 20px;
     }
     &__enlace {
-        margin: 20px;
-        color: blue;
         grid-area: enlace;
+        margin: 20px;
+
+        font-family:$fontFamily;
+        $tamanoFuenteEnlace:$tamanoFuenteEnlace;
+        font-weight: bold;
+        color: #1973b8;   
+       
         vertical-align: text-bottom;
     }
 }
