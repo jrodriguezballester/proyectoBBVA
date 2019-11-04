@@ -2,7 +2,7 @@
     @if ($debugSeccion==true) {
         border: 2px solid red;
     }
-    height: 950px; 
+ //   height: 950px; 
 
 }
 @media (max-width:700px){
@@ -37,10 +37,15 @@
     padding: 50px;
 }
 @media (max-width:700px){
-    .seccion__titulo{
-        font-size: 3rem;
-        padding: 5px;
-    }
+     .seccion__titulo {
+        @if ($debug==true) {
+            border: 1px solid green;
+        }
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: sans-serif; 
+        padding: 5px; 
+   }
 
 }
 
@@ -75,12 +80,5 @@
         margin-right: auto ;   
         width: auto;  
     }
-    .seccion__titulo {
-         @if ($debug==true) {
-             border: 1px solid green;
-         }
-         text-align: center;
-         font-size: 1.5rem;
-         font-family: sans-serif;  
-    }
+  
 }

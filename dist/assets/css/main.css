@@ -356,9 +356,6 @@ template {
 [hidden] {
   display: none; }
 
-.seccion {
-  height: 950px; }
-
 @media (max-width: 700px) {
   .seccion {
     height: 900px; } }
@@ -383,7 +380,10 @@ template {
 
 @media (max-width: 700px) {
   .seccion__titulo {
-    font-size: 3rem;
+    border: 1px solid green;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: sans-serif;
     padding: 5px; } }
 
 .seccion__pie {
@@ -405,12 +405,7 @@ template {
     margin-bottom: 0px;
     margin-left: auto;
     margin-right: auto;
-    width: auto; }
-  .seccion__titulo {
-    border: 1px solid green;
-    text-align: center;
-    font-size: 1.5rem;
-    font-family: sans-serif; } }
+    width: auto; } }
 
 .noticia {
   display: grid;
@@ -529,6 +524,11 @@ template {
     font-size: 18px;
     line-height: 25px;
     margin-top: 10px; }
+
+.l-menu {
+  border: 1px solid green;
+  display: flex;
+  flex-direction: row; }
 
 .l-columns {
   display: grid;

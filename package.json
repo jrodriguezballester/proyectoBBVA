@@ -8,6 +8,7 @@
     },
     "dependencies": {},
     "devDependencies": {
+        "@fortawesome/fontawesome-free": "^5.11.2",
         "onchange": "^6.1.0"
     },
     "scripts": {
