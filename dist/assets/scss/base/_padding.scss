@@ -1,0 +1,23 @@
+$sizes: (xs, 2px), (s, 10px), (m, 15px), (l, 20px), (xl, 40px);
+
+  @each $name, $size in $sizes {
+    g-padding-#{$name} {
+      padding-left: $size;
+    }
+    g-padding-vertical-#{$name} {
+      padding-left: $size;
+      padding-right: $size;
+    }
+
+    g-padding-horizontal-#{$name} {
+      padding-top: $size;
+      padding-bottom: $size;
+    }
+
+  }
+  g-padding-horizontal {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+  

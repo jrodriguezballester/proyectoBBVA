@@ -4,10 +4,49 @@
     }
  //   height: 950px; 
 
+ $sizes: (xs, 2px), (s, 10px), (m, 15px), (l, 20px), (xl, 40px);
+
+ @each $name, $size in $sizes {
+   &--padding-left-#{$name} {
+     padding-left: $size;
+   }
+   &--padding-right-#{$name} {
+    padding-right: $size;
+  }
+   &--padding-top-#{$name} {
+     padding-top: $size;
+    
+   }
+
+   &--padding-bottom-#{$name} {
+     padding-bottom: $size;
+   }
+
+
+   &--padding-isMovil-left-#{$name} {
+    padding-left: $size;
+  }
+  &--padding-isMovil-right-#{$name} {
+   padding-right: $size;
+ }
+  &--padding-isMovil-top-#{$name} {
+    padding-top: $size;
+   
+  }
+
+  &--padding-isMovil-bottom-#{$name} {
+    padding-bottom: $size;
+  }
+ }
+
+
+
+
+
 }
 @media (max-width:700px){
     .seccion{
-        height: 900px;
+     //   height: 900px;
     }
 }
 .seccion--oscura {
@@ -62,13 +101,11 @@
     @if ($debug==true) {
         border: 1px solid green;
     }
-    //     margin-left: auto;
-    //    margin-right: auto;
- //   margin-top: 40px;
+  
     margin-bottom: 40px;
     margin-left: 20%;
     margin-right: 20%;
-    // width: 80%;
+  
 }
 @media (max-width:700px){
     .seccion--movil-padding-xs{
