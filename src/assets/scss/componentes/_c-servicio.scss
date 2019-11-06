@@ -1,19 +1,43 @@
-.ventaja {
-    background-color: blue;
-    height: 100%;
+.servicio {
     display: grid;
-    grid-template-columns: 150px 300px;
-  
+    height: 350px;
+ 
     &__imagen {
+        grid-column: 2;
+        align-self: center;     
+    }
+
+    &__informacion {
         grid-column: 1;
-    
-      }
-      &__titulo {
-        grid-column: 2;
+        align-self: center;
+    }
+
+    &__titulo {
         text-align: center;
-        font-size: 30px;
-      }
-      &__contenido {
-        grid-column: 2;
-      }
+        font-size: 30px;      
+    }
+
+    &__contenido {
+        font-size: 20px;
+        font-size: 20px;
+        margin-left: 20px;
+        line-height: 30px;
+        margin-top: 10px;
+    }
+
+    &--oscuro{
+        background-color:$color-masoscuro;
+    }
+    &--menososcuro{
+       
+        background-color: $color-oscuro;
+    }
+    &--claro{
+        background-color: $color-claro;
+    }
+    &--masclaro{
+        background-color: $color-masclaro;
+    }
+ 
+
 }

@@ -4,10 +4,10 @@
     }
     display: grid;
     grid-template-areas: "izquierda arriba-derecha arriba-derecha" "izquierda abajo-centro abajo-derecha";
-    grid-column-gap: 25px;
-    grid-row-gap: 25px;
+    grid-column-gap: 50px;
+    grid-row-gap: 35px;
     grid-template-columns: 288px 288px 280px;
-    ;
+   
     // margin: 10px;
 }
 
@@ -25,4 +25,23 @@
 
 .l-puzzle__izquierda {
     grid-area: izquierda;
+}
+@media (max-width:700px){
+    .l-puzzle--movil-1columna{
+        grid-template-columns: 288px;
+        grid-template-areas: "izquierda";
+        justify-content: center;
+     
+    }
+    .l-puzzle__abajo-centro {
+        display: none;
+    }
+    
+    .l-puzzle__abajo-derecha {
+        display: none;
+    }
+    
+    .l-puzzle__arriba-derecha {
+        display: none;
+    }  
 }

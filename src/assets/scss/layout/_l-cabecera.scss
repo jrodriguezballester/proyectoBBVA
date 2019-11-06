@@ -1,0 +1,29 @@
+.l__cabecera {
+    @if ($debugNoticia==true) {
+        border: 1px solid green;
+    }
+  //  background: red;
+    display: grid;
+    grid-template-areas: ". arriba botones" 
+                        "logo abajo abajo";
+  
+ //   grid-column-gap: 50px;
+ //   grid-row-gap: 35px;
+ //   grid-template-columns: 288px 288px 280px;
+   
+    // margin: 10px;
+    &__superior{
+        grid-area: arriba;
+      
+    }
+    &__inferior{
+        grid-area: abajo;
+       
+    }
+    &__logo{
+        grid-area: logo;
+    }
+    &__botones{
+        grid-area: botones;
+    }
+}

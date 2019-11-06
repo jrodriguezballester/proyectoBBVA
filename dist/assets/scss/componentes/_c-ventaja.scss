@@ -1,7 +1,8 @@
 .ventaja {
-    background-color: blue;
+    background-color: white;
     height: 100%;
     display: grid;
+<<<<<<< HEAD
     grid-template-columns: 150px 300px;
     &__imagen {
         grid-column: 1;
@@ -13,5 +14,33 @@
     }
     &__contenido {
         grid-column: 2;
+=======
+    grid-template-columns: 100px 345px;
+    column-gap: 30px;
+    row-gap: 60px;
+    &__imagen {
+        grid-column: 1;
+        grid-row: span 2;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+    &__informacion {
+        // width: 90%;
+    }
+    &__titulo {
+        grid-column: 2;
+        text-align: left;
+        font-weight: bold;
+        font-size: $tamanoFuenteTitulo;
+        margin-top: 10px;
+        // margin-left: 10px;
+    }
+    &__contenido {
+        grid-column: 2;
+        text-align: left;
+        font-size: $tamanoFuenteNormal;
+        line-height: 25px;
+        margin-top: 10px;
+>>>>>>> jose
     }
 }

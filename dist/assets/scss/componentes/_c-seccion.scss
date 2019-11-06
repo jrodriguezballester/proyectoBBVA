@@ -1,21 +1,121 @@
+.seccion {
+    @if ($debugSeccion==true) {
+        border: 2px solid red;
+    }
+ //   height: 950px; 
+
+ $sizes: (xs, 2px), (s, 10px), (m, 15px), (l, 20px), (xl, 40px);
+
+ @each $name, $size in $sizes {
+   &--padding-left-#{$name} {
+     padding-left: $size;
+   }
+   &--padding-right-#{$name} {
+    padding-right: $size;
+  }
+   &--padding-top-#{$name} {
+     padding-top: $size;
+    
+   }
+
+   &--padding-bottom-#{$name} {
+     padding-bottom: $size;
+   }
+
+
+   &--padding-isMovil-left-#{$name} {
+    padding-left: $size;
+  }
+  &--padding-isMovil-right-#{$name} {
+   padding-right: $size;
+ }
+  &--padding-isMovil-top-#{$name} {
+    padding-top: $size;
+   
+  }
+
+  &--padding-isMovil-bottom-#{$name} {
+    padding-bottom: $size;
+  }
+ }
+
+
+
+
+
+}
+@media (max-width:700px){
+    .seccion{
+     //   height: 900px;
+    }
+}
 .seccion--oscura {
-    background-color: rgb(243, 240, 240);
-    height: 900px;
+    background-color: #e9e9e9;
+ //    height: 950px;
+}
+
+.seccion--clara {
+    background-color: white;
+    height: 750px;
+    // height: 900px;
+}
+
+.seccion--corporativa {
+    background-color: #004481;
+    color: white;
+    // height: 900px;
 }
 
 .seccion__titulo {
+    @if ($debug==true) {
+        border: 1px solid green;
+    }
     text-align: center;
-    font-size: 50px;
+    font-size: 36px;
+    font-family: sans-serif;
     padding: 50px;
+}
+@media (max-width:700px){
+     .seccion__titulo {
+        @if ($debug==true) {
+            border: 1px solid green;
+        }
+        text-align: center;
+        font-size: 1.5rem;
+        font-family: sans-serif; 
+        padding: 5px; 
+   }
+
 }
 
 .seccion__pie {
+    @if ($debug==true) {
+        border: 1px solid green;
+    }
+    margin-top: 120px;
     text-align: center;
+    height: 100px;
 }
 
 .seccion__contenido {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 906px;
+    @if ($debug==true) {
+        border: 1px solid green;
+    }
+  
+    margin-bottom: 40px;
+    margin-left: 20%;
+    margin-right: 20%;
+  
+}
+@media (max-width:700px){
+    .seccion--movil-padding-xs{
+        padding: 5px;
+    }
+    .seccion__contenido {
+        margin-bottom: 0px;
+        margin-left:auto;
+        margin-right: auto ;   
+        width: auto;  
+    }
+  
 }

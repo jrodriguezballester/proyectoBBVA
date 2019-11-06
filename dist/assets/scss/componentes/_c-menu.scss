@@ -1,0 +1,18 @@
+.menu{
+    @if ($debugMenu==true) {
+        border: 1px solid green;
+    } 
+    display:flex;
+    flex-direction: row;
+}
+.menu__item{
+    padding: 20px;
+    width: 175px;
+    height: 30px;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 13px;
+   
+    width: 127px;
+    height: 30px;
+}
