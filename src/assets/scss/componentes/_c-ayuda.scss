@@ -1,0 +1,37 @@
+.ayuda {
+ //   border: 1px solid red;
+    text-align: center;
+    &__circulo {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        width: 150px;
+        height: 150px;
+    //    border: 1px solid blue;
+        background-color: #e9e9e9;
+        border-radius: 50%;
+        //centramos el hijo vertical y horizontal.-
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__titulo {
+        @if ($debug==true) {
+            border: 1px solid green;
+        }
+        text-align: center;
+        font-weight: bold;
+        font-size: $tamanoFuenteTitulo;
+        margin-top: 10px;
+    }
+    &__contenido {
+        text-align: center;
+        font-size: $tamanoFuenteNormal;
+        line-height: 25px;
+        margin-top: 10px;
+    }
+}
+g-padding-horizontal {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }

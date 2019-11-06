@@ -6,11 +6,10 @@
     "directories": {
         "doc": "docs"
     },
-    "dependencies": {},
-    "devDependencies": {
-        "onchange": "^6.1.0"
-    },
-    "scripts": {
+    "dependencies": { "@fortawesome/fontawesome-free": "^5.11.2"},
+
+    
+        "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "build": ".\\scripts\\build.sh echo 'build.sh ahora copiaremos los archivos de src/ hasta dist/'",
         "deploy": "npm run build &&  .\\scripts\\deploy.sh",
