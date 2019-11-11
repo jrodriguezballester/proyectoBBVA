@@ -1,10 +1,10 @@
-.l__cabecera {
+.l-cabecera {
     @if ($debugNoticia==true) {
         border: 1px solid green;
     }
   //  background: red;
     display: grid;
-    grid-template-areas: ". arriba botones" 
+    grid-template-areas: ". arriba derecha" 
                         "logo abajo abajo";
   
  //   grid-column-gap: 50px;
@@ -23,7 +23,7 @@
     &__logo{
         grid-area: logo;
     }
-    &__botones{
-        grid-area: botones;
+    &__derecha{
+        grid-area: derecha;
     }
 }

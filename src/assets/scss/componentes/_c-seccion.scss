@@ -65,6 +65,9 @@
     color: white;
     // height: 900px;
 }
+.seccion--masOscura{
+    background-color: #072146;
+}
 
 .seccion__titulo {
     @if ($debug==true) {
